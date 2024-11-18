@@ -1,0 +1,205 @@
+    .trdeger-detail-area .content-img img {
+        border-radius: 8px;
+    }
+
+    .wcag-image-text {
+        position: absolute;
+        left: -99999px;
+    }
+
+    .content-text-wrap p {
+        font-size: 16px;
+    }
+
+    .box-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        position: relative;
+        width: 770px;
+        height: 400px;
+    }
+
+    .buttons a {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .buttons iframe {
+        border-radius: 8px;
+    }
+
+    .gallery-space {
+        display: flex;
+    }
+
+    .first-gallery {
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+
+    .last-gallery {
+        margin-bottom: 60px;
+    }
+
+    .gallery-space .buttons {
+        width: 570px;
+        height: 220px;
+    }
+
+    .first-gallery .buttons {
+        margin-left: 30px;
+    }
+
+    .gallery-space .buttons iframe {
+        border-radius: 4px;
+    }
+
+    .gallery-image {
+        margin-left: 30px;
+    }
+
+    .gallery-image img {
+        width: 270px;
+        height: 220px;
+    }
+
+    .gallery-image:first-child {
+        margin-left: unset;
+    }
+
+    .campaign-list .mega-menu-img .caption .btns-wrap .btn.btn-primary {
+        border-radius: unset;
+        border: unset;
+        background-color: unset;
+        color: #049EAD;
+        padding-left: 0;
+        text-align: start;
+    }
+
+    .panel-card-wrap .grey-panel-card-wrap::before,
+    .panel-card-wrap .grey-panel-card-wrap::after {
+        display: none;
+    }
+
+    .campaign-list .mega-menu-img .caption .btns-wrap .btn.btn-primary:focus {
+        background-color: unset;
+        border-color: unset;
+        color: #049EAD;
+    }
+
+    .campaign-list .mega-menu-img .caption .btns-wrap .btn.btn-primary:hover {
+        background-color: unset;
+        border-color: unset;
+        color: #049EAD;
+    }
+
+    .panel-card-wrap .grey-panel-card-wrap {
+        background-color: unset;
+    }
+
+    @media (max-width:768px) {
+        .box-news>h3 {
+            margin-bottom: unset;
+        }
+
+        .buttons {
+            width: 100%;
+            height: 100%;
+            padding: 20px 16px 32px;
+        }
+
+        .gallery-space {
+            justify-content: center;
+            padding: 20px 16px;
+            gap: 20px 12px;
+        }
+
+        .first-gallery {
+            flex-wrap: wrap
+        }
+
+        .last-gallery {
+            flex-wrap: wrap-reverse;
+            padding-top: unset;
+            margin-bottom: 12px;
+        }
+
+        .gallery-space .buttons {
+            width: 100%;
+            height: 178px;
+            padding: unset;
+            flex: 1 1 100%;
+            margin-left: unset;
+        }
+
+        .gallery-image {
+            margin-left: unset;
+            max-width: 270px;
+            width: 100%;
+            flex: 1 1 48%;
+        }
+
+        .mega-menu-img {
+            margin-bottom: 20px;
+            max-width: 270px;
+            display: block;
+        }
+
+        .grey-panel-card-wrap {
+            padding: 12px;
+        }
+
+        .campaign-list>div {
+            margin: 0 4% 20px 4%;
+            max-width: 240px;
+        }
+
+        .mega-menu-img.type2 a.img {
+            max-height: unset;
+            position: relative;
+            float: unset;
+        }
+
+        .mega-menu-img.type2 .caption {
+            width: 100%;
+            position: relative;
+        }
+
+        .grey-panel-card-wrap .campaign-list {
+            padding: 20px 0 0;
+            height: unset;
+            display: -webkit-box;
+            overflow: scroll;
+        }
+
+        .campaign-list .mega-menu-img .caption .btns-wrap .btn.btn-primary {
+            opacity: 1;
+            position: relative;
+            padding-bottom: 27px;
+        }
+
+        .mega-menu-img .caption .btns-wrap {
+            position: relative;
+        }
+    }
+
+    .mega-menu-img.type2 {
+        height: auto;
+        width: 100%;
+    }
+
+    @media (max-width:768px) {
+        .banner-wrap .banner-item .background-layer {
+            height: 150px;
+            background-size: contain;
+            border-radius: 8px;
+        }
+    }

@@ -1,0 +1,76 @@
+.tab-content > div[id*='evTelefonu'] .card.v2.v2-campaignCard {
+  height: 403px;
+}
+
+.tab-content > div[id*='evTelefonu'] .card.v2.v2-campaignCard .card-body .card-campaign-box-info {
+  padding: 0;
+}
+
+.tab-content > div[id*='evTelefonu'] .card.v2.v2-campaignCard .card-body .card-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 0 28px 0 0;
+  margin-top: -25px;
+}
+
+.tab-content > div[id*='evTelefonu'] .card.v2.v2-campaignCard .card-body .card-info > div {
+  width: unset;
+  padding: unset;
+}
+
+.tab-content > div[id*='evTelefonu'] .card.v2.v2-campaignCard .card-body .card-info h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.box-news {
+  padding-top: 60px;
+}
+
+.box-news > h3 {
+  margin: 0;
+}
+
+.special-programs-band {
+  padding: 60px 0px;
+}
+
+.box-opportunity {
+  margin: 0;
+}
+
+#suggestDigitalService > h3 {
+  margin-bottom: -26px;
+}
+
+#suggestDigitalService .cards {
+  padding: 50px 38px 44px 38px;
+}
+
+@media (max-width: 768px) {
+  #suggestDigitalService .cards {
+    padding: 50px 38px 44px 38px;
+    padding: 0;
+    margin-left: -12px;
+    width: 101vw;
+  }
+}
+
+#suggestDigitalService .cards-btn {
+  margin-top: -12px;
+}
+
+#suggestDigitalService:before {
+  top: -72px;
+}
+
+.online-process {
+  margin-top: 0;
+}

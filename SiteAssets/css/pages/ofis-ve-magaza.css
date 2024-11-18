@@ -1,0 +1,326 @@
+.pageContainer {
+  display: flex;
+  gap: 40px;
+  width: 100vw;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.userLocationMarker {
+  width: 53px !important;
+  height: 53px !important;
+}
+
+.locationMarker {
+  width: 40px !important;
+  height: 52px !important;
+}
+
+.marker-cluster-small {
+  background-color: rgba(129, 207, 216, 0.6);
+}
+.marker-cluster-small div {
+  background-color: rgba(68, 186, 199, 0.6);
+}
+.marker-cluster-medium {
+  background-color: rgba(243, 255, 0, 0.6);
+}
+.marker-cluster-medium div {
+  background-color: rgba(222, 234, 0, 0.6);
+}
+.marker-cluster-large {
+  background-color: rgba(220, 62, 51, 0.6);
+}
+.marker-cluster-large div {
+  background-color: rgba(220, 62, 51, 0.6);
+}
+
+.searchCardAndMapContainer {
+  position: relative;
+}
+.searchCardAndMapContainer .searchCard {
+  position: absolute;
+  top: 50%;
+  right: 132px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 272px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.searchCardAndMapContainer .searchCard .nav-pills .nav-link.active,
+.searchCardAndMapContainer .searchCard .nav-pills .show > .nav-link {
+  background-color: #fff !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills {
+  width: 100% !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills .nav-item {
+  width: 50% !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills li:first-child .nav-link {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills li:first-child .nav-link::before {
+  display: none;
+  content: "";
+  height: 100%;
+  background: #ff983a;
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills li:last-child .nav-link {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.searchCardAndMapContainer .searchCard .nav-pills li:last-child .nav-link::before {
+  display: none;
+  content: "";
+  height: 100%;
+  background: #ff983a;
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.searchCardAndMapContainer .searchCard .showClosest {
+  background-color: transparent;
+  border: none;
+  color: #05b4c7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.searchCardAndMapContainer .searchCard .showClosest img {
+  width: auto !important;
+  height: 18px !important;
+  font-weight: bold;
+}
+.searchCardAndMapContainer .searchCard .nav-link {
+  position: relative !important;
+  background-color: #f0f2f5;
+  color: #575e6f !important;
+  padding: 17px !important;
+  border: solid 1px #eff1f6;
+}
+.searchCardAndMapContainer .searchCard .nav-link.active {
+  background-color: white !important;
+  color: #222943 !important;
+  font-weight: bold !important;
+  font-size: 17px !important;
+}
+.searchCardAndMapContainer .searchCard .nav-link.active::before {
+  display: block !important;
+  content: "";
+  height: 100%;
+  background: #ff983a;
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.searchCardAndMapContainer .searchCard .searchInputContainer {
+  border-radius: 4px !important;
+}
+.searchCardAndMapContainer .searchCard .searchInputContainer input,
+.searchCardAndMapContainer .searchCard .searchInputContainer button {
+  padding: 16px !important;
+}
+.searchCardAndMapContainer .searchCard .searchInputContainer button {
+  background-image: linear-gradient(133deg, #048a95, #0abec7);
+  color: #fff !important;
+}
+.searchCardAndMapContainer .searchCard .showResult {
+  background-color: #002855 !important;
+  border-color: #002855 !important;
+  color: #ffffff !important;
+  width: 100% !important;
+  border-radius: 22px !important;
+}
+.searchCardAndMapContainer .searchCard .form-control:focus {
+  border-color: #dee3ed !important;
+  box-shadow: none !important;
+}
+.searchCardAndMapContainer #map {
+  height: 615px;
+}
+.searchCardAndMapContainer #map .leaflet-popup {
+  bottom: 45px !important;
+}
+.searchCardAndMapContainer #map .leaflet-popup .leaflet-popup-content {
+  margin: 0px !important;
+  padding: 37px 20px;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+.searchCardAndMapContainer #map .leaflet-popup .leaflet-popup-content .popupTextContainer {
+  gap: 10px !important;
+}
+.searchCardAndMapContainer #map .leaflet-popup .leaflet-popup-content .popupTextContainer span {
+  width: -moz-max-content;
+  width: max-content;
+}
+.searchCardAndMapContainer #map .leaflet-popup .leaflet-popup-close-button {
+  display: none !important;
+}
+/* #shareModal {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+} */
+/* #shareModal .modal-dialog {
+  transform: translateY(50%) !important;
+} */
+#shareModal .modal-dialog .modal-content {
+  border-radius: 0 30px 0 30px !important;
+}
+#shareModal .modal-dialog .modal-content .modal-body {
+  padding: 0px !important;
+}
+#shareModal .modal-dialog .modal-content .modal-body .textContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+#shareModal .modal-dialog .modal-content .modal-body .textContainer input {
+  background-color: transparent !important;
+  border-width: 0px 0px 1px 0px !important;
+  border-color: #222943 !important;
+}
+#shareModal .modal-dialog .modal-content .modal-body .textContainer .copyButton {
+  width: 100% !important;
+  background-color: #002855;
+  border-color: #002855 !important;
+  color: #ffffff;
+  border-radius: 22px !important;
+  padding: 9px 15px !important;
+  border: 1px transparent solid !important;
+}
+#shareModal .modal-dialog .modal-content .modal-body .imageContainer {
+  position: relative !important;
+  background-color: #002855 !important;
+  border-radius: 0 30px 0px 0px !important;
+}
+
+.popupButtonContainer {
+  display: flex !important;
+  gap: 20px !important;
+}
+.popupButtonContainer .popupButton {
+  border: 1px solid #dee3ed;
+  border-radius: 50%;
+  padding: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent !important;
+  display: flex;
+}
+.popupButtonContainer .popupButton img {
+  max-width: unset !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.searchResultContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+.searchResultContainer .resultCard {
+  width: 49%;
+  height: auto;
+  min-height: 184px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 6px rgba(118, 118, 118, 0.08);
+  padding: 20px;
+}
+.searchResultContainer .resultCard .popupTextContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown {
+  width: 100% !important;
+}
+.dropdown .btn {
+  background-color: #fff;
+  color: #666f85;
+  width: 100% !important;
+  text-align: left;
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+  border: 1px solid #dee3ed !important;
+}
+.dropdown .btn::after {
+  display: none !important;
+}
+.dropdown .btn:hover {
+  background-color: #fff;
+  color: #666f85;
+}
+.dropdown .dropdown-menu {
+  width: 100% !important;
+  --bs-dropdown-padding-y: 0px !important;
+  --bs-dropdown-link-active-bg: #fff !important;
+}
+.dropdown .dropdown-menu .searchboxItem {
+  padding: 4px !important;
+}
+.dropdown .dropdown-menu .list {
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.dropdown .dropdown-menu .list .dropdown-item {
+  padding: 12px 16px !important;
+}
+.dropdown .dropdown-menu .list .dropdown-item:hover {
+  background-color: #f2f4f8 !important;
+  cursor: pointer !important;
+}
+
+@media (max-width: 992px) {
+  .searchCardAndMapContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .searchCardAndMapContainer .searchCard {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 100% !important;
+  }
+  .searchCardAndMapContainer #map {
+    height: 415px;
+  }
+} /*# sourceMappingURL=style.css.map */

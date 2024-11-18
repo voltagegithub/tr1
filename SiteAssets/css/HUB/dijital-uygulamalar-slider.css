@@ -1,0 +1,434 @@
+﻿    .sub-slider{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 116px 0 126px 135px;
+        position: relative;
+        overflow: hidden;
+        max-width: 1440px; 
+        margin: 0 auto;
+        grid-template-areas: "h3 h3" "sliderC swiper" "sliderC swiper" ;
+    }
+    .sub-slider h3{
+        margin-bottom: 24px;
+        font-family: Mulish;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.24px;
+        grid-area: h3;
+    }
+    .sub-slider .slider-content{
+        padding: 32px 16px 32px 39px;
+        max-width: 871px;
+        min-width: 871px;
+        max-height: 458px;
+        background-color: #fff;
+        border-radius: 8px;
+        width:100%;
+        position: relative;
+        z-index: 2;
+        grid-area: sliderC;
+    }
+    .sub-slider[data-value="Türk Telekom"] .slider-content{
+        background: linear-gradient(179.75deg, #00182B -9.87%, #014F99 124.76%);
+    }
+    .sub-slider[data-value="Türk Telekom"] .slider-content *{
+        color: #FFF;
+    }
+    .sub-slider[data-value='Türk Telekom']{
+        background: #F8F9FB;
+    }
+    .sub-slider[data-value='Yaay']{
+        background: linear-gradient(130deg, #0076F6 8.65%, #014896 102.53%);
+    }
+    .sub-slider[data-value='Tivibu Go']{
+        background: linear-gradient(4deg, #08162A 0%, #BBBCBF 100%);
+    }
+    .sub-slider[data-value='Muud']{
+        background: linear-gradient(180deg, #AA14C5 0%, #1A83FF 100%);
+    }
+    .sub-slider[data-value='E-Dergi']{
+        background-color: #2777AF;
+    }
+    .sub-slider[data-value='Pokus']{
+        background-color: #06BCB0;
+    }
+    .sub-slider[data-value='Dijital Depo']{
+        background-color: #89D4E3;
+    }
+    .sub-slider[data-value='Mcafee']{
+        background: linear-gradient(221deg, #C01818 0%, #540303 100%);
+    }
+    .sub-slider[data-value='Türk Telekom'] h3{
+        color: #222943;
+    }
+    .sub-slider[data-value='Yaay'] h3{
+        color: #FFF;
+    }
+    .sub-slider[data-value='Tivibu Go'] h3{
+        color: #FFF;
+    }
+    .sub-slider[data-value='Muud'] h3{
+        color: #FFF;
+    }
+    .sub-slider[data-value='E-Dergi'] h3{
+        color: #FFF;
+    }
+    .sub-slider[data-value='Dijital Depo'] h3{
+        color: #222943;
+    }
+    .sub-slider[data-value='Mcafee'] h3{
+        color: #FFF;
+    }
+    .sub-slider .slider-detail.active{
+        display: flex;
+        column-gap: 38px;
+        align-items: end;
+    }
+    .sub-slider .slider-detail{
+        display: none;
+        align-items: end;
+    } 
+    .sub-slider .slider-detail .slider-detail-right{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin-bottom: 24px;
+        max-width: 586px;
+        width: 100%;
+    }
+    .sub-slider .slider-detail .slider-detail-right .slider-text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+    .sub-slider .slider-detail .slider-detail-right .slider-title{
+        color: #222943;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 26px;
+    }
+    .sub-slider[data-value='Türk Telekom'] .slider-detail .slider-detail-right .slider-title{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 26px;
+    }
+    .sub-slider .slider-detail .slider-detail-right .slider-decpirition{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .sub-slider .slider-detail .slider-uygulama-qr{
+        min-width: 80px;
+        margin-bottom: -16px;
+    }
+    .sub-slider[data-value='Türk Telekom'] .slider-detail .slider-detail-right .slider-decpirition,
+    .sub-slider[data-value='Türk Telekom'] .slider-detail .slider-detail-right .feature-title{
+        color: #FFFFFFBF;
+    }
+    .sub-slider .slider-img{
+        position: relative;
+        max-width: 193px;
+        max-height: 394px;
+        width: 100%;
+        height: 100%;
+    }
+    .sub-slider .slider-img::before{
+        content: url(../../../PublishingImages/dijital-uygulama/detail-image/background-phone.png);
+        position: relative;
+        z-index: 1;
+        max-width: 193px!important;
+    }
+    .sub-slider .slider-img img.phone-inside-img{
+        position: absolute;
+        display: inline;
+        z-index: 0;
+        border-radius: 25px;
+        height: 100%!important;
+        width: 100%;
+        left: 0;
+        padding: 9px;
+    }
+    .sub-slider .slider-features{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px;
+    }
+    .sub-slider .feature-area{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    } 
+    .sub-slider .feature-title{
+        color: #717D8D;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+    .sub-slider .slider-detail-buttons{
+        display: block;
+    }
+    .sub-slider .slider-detail-buttons a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        width: 100%;
+        height: 100%;
+        text-decoration: unset;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 22px;
+    }
+    .sub-slider .slider-detail-buttons .btn-examine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        width: 100%;
+        background-color: #002855;
+        border-radius: 100px;
+    }
+    .sub-slider[data-value='Türk Telekom'] .slider-detail-buttons .btn-examine{
+        background: #FFFFFF;
+    }
+    .sub-slider .slider-detail-buttons .btn-examine a{
+        color: #fff;
+    }
+    .sub-slider[data-value='Türk Telekom'] .slider-detail-buttons .btn-examine a{
+        color: #222943;
+    }
+    .sub-slider .btn-down-now{
+        display: none;
+    }
+    .sub-slider .btn-down-now a{
+        color: #fff!important;
+    }
+    .sub-slider .swiper{
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        position: unset;
+        grid-area: swiper;
+        margin-left: 16px;
+    }
+    .sub-slider .swiper.slider-cards .swiper-wrapper{
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    .sub-slider .swiper-slide.swiper-slide-active{
+        width: 190px!important;
+    }
+    .sub-slider .swiper-slide.swiper-slide-active img{
+        width: 190px!important;
+    }
+    .sub-slider .swiper-slide {
+      height: 100%;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sub-slider .swiper-slide img {
+      display: block;
+      max-width: 170px;
+      min-width: 170px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .sub-slider .scrollbar-parent{
+        display: none;
+    }
+    .scrollbar-parent{
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        max-width: 1170px;
+        width: 100%;
+        border-radius: 100px;
+    }
+    .sub-slider .swiper .scrollbar-parent .swiper-scrollbar{
+        display: flex;
+        align-items: center;
+        background: var(--white-white-30, rgba(255, 255, 255, 0.30));
+    }
+    .sub-slider .swiper .scrollbar-parent .swiper-scrollbar .swiper-scrollbar-drag{
+        display: block;
+        width: 100%;
+        border-radius: 100px;
+        background: var(--white-white, #FFF);
+        height: 10px;
+    }
+    .sub-slider .swiper-buttons{
+        display: flex;
+        column-gap: 16px;
+        margin-top: 28px;
+    }
+    .sub-slider .swiper-buttons .swiper-button-next,.swiper-buttons .swiper-button-prev{
+        position: unset;
+        margin-top: unset;
+        width: unset;
+        border-radius: 50%;
+        position: relative;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 56px;
+        justify-content: center;
+        padding: 0;
+        width: 56px;
+        min-width: 56px;
+        max-width: 56px;
+        bottom: 0;
+        color: #fff;
+    }
+    .sub-slider[data-value='Türk Telekom'] .swiper-buttons .swiper-button-next, .sub-slider[data-value='Türk Telekom'] .swiper-buttons .swiper-button-prev{
+        background: rgba(222, 227, 237, 0.6);
+    }
+    .sub-slider .swiper-buttons .swiper-button-next{
+        left: 16px;
+    }
+    .sub-slider .swiper-buttons .swiper-button-prev::after, .swiper-buttons .swiper-button-next::after{
+        display: none;
+    }
+    .sub-slider .swiper-buttons .swiper-button-prev i, .swiper-buttons .swiper-button-next i{
+        font-size:1.5rem;
+        color: rgba(255, 255, 255, 1);
+    }
+    .sub-slider[data-value='Türk Telekom'] .swiper-buttons .swiper-button-prev i, .sub-slider[data-value='Türk Telekom'] .swiper-buttons .swiper-button-next i{
+        color: rgba(34, 41, 67, 1);
+        ;
+    }
+    .sub-slider .slider-start{
+        display: none;
+    }
+    .sub-slider .sub-slider .slider-content .slider-uygulama-qr{
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+    }
+    @media (max-width:1200px) {
+        .sub-slider{
+            padding: unset;
+            grid-template-areas: "h3" "swiper" "bottomscroll" "sliderC" ;
+            grid-template-columns: unset;
+        }
+        .sub-slider h3{
+            padding: 20px 20px 0;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .sub-slider .slider-detail.active{
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .sub-slider .slider-img{
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        .sub-slider .slider-detail-right{
+            margin-top: 215px;
+        }
+        .sub-slider .slider-content{
+            padding: unset;
+            max-width: unset;
+            min-width: unset;
+            max-height: unset;
+            border-radius: unset;
+            margin-right: unset;
+        }
+        .sub-slider .swiper .scrollbar-parent{
+            height: 1px;
+            position: relative!important;
+            bottom: unset!important;
+            margin-top: 16px;
+            padding-left: 26px;
+        }
+        .sub-slider .swiper .scrollbar-parent .swiper-scrollbar .swiper-scrollbar-drag{
+            max-width: 75px;
+            height: 3px;
+        }
+        .sub-slider .swiper{
+            margin: 0 0 227px 20px;
+        }
+        .sub-slider .swiper-slide.swiper-slide-active{
+            width: 158px!important;
+        }
+        .sub-slider .swiper-slide.swiper-slide-active img{
+            width: 158px!important;
+        }
+        .sub-slider .swiper-slide img {
+            max-width: 131px;
+            min-width: 131px;
+        }
+        .sub-slider .slider-detail-buttons{
+            display: flex;
+            column-gap: 16px;
+            justify-content: center;
+            height: 44px;
+        }
+        .sub-slider .slider-detail-buttons .btn-examine{
+            max-width: 200px;
+            width: 100%;
+            background-color: unset;
+        }
+        .sub-slider .slider-detail-buttons .btn-examine a{
+            color: #052C55;
+            border: 1px solid #052C55;
+            border-radius: 100px;
+        }
+        .sub-slider .btn-down-now{
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            width: 100%;
+            background-color: #002855;
+            border-radius: 100px;
+        }
+        .sub-slider .sub-slider .scrollbar-parent{
+            display: block;
+        }
+        .sub-slider .swiper-buttons{
+            display: none;
+        }
+        .sub-slider[data-value='Yaay'] .slider-start{
+            display: flex;
+            position: absolute;
+            top: 114px;
+            right: 21px;
+            z-index: 9999;
+        }
+        .sub-slider .slider-start .to-left-btn{
+            display: flex!important;
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 35px;
+            column-gap: 6px;
+            background-color: #fff;
+            border-radius: 80px;
+        }
+        .sub-slider .slider-start .to-left-btn span{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 22px;
+        }
+        .sub-slider .icon-left-arrow:before{
+            content: url("../../../PublishingImages/dijital-uygulama/dijital-uygulama-detail-icons/Chevron.svg") ;
+        }
+        .sub-slider .slider-content .slider-uygulama-qr{
+            display: none;
+        }
+    }
