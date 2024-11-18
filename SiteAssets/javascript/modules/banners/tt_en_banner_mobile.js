@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){console.log("Sayfa y\xfcklendi...");let e=document.querySelectorAll(".banner-item > .container");console.log(e[0]),console.log(e[1]),console.log(e[2]),window.matchMedia("(max-width: 1080px)").matches&&e.forEach(e=>{e.style.display="none"})});
